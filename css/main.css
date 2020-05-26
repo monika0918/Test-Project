@@ -1,0 +1,232 @@
+/* Global */
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* * {
+  outline: 1px solid red;  use as a design aide 
+} */
+
+
+/* Home Page */
+  
+  
+#homejumbotron {
+  background-image: url("https://res.cloudinary.com/dvfa68qn3/image/upload/w_1920,c_scale/q_auto,f_auto/fl_lossy/v1590325133/Background_for_home_page_dbtjox.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.jumbotron .display-4 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.container1.row {
+    flex-wrap: nowrap;
+}
+
+.content1.col {
+    min-width: 100%; /* important for navbar display */
+    overflow-x: hidden; /* important for navbar display */
+}
+
+.brand1 h1 {
+    font-size: 1.3rem;
+}
+
+.signin1,
+.feature1 {
+   flex: none; /* important for fixed width of form and iframe */
+}
+
+.signin1 form {
+    width: 240px; 
+}
+
+.feature1 iframe {
+    width: 320px; /* youtube iframe ratio is 16:9... */
+    height: 180px; /* ...always maintain the same ratio */
+    background-color: #000;
+}
+
+@media only screen and (min-width: 500px) {
+    .feature1 iframe {
+        width: 480px;
+        height: 270px; 
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .content1.col {
+        min-width: 0; /* important for adjusting main content */
+    }
+}
+
+/* Template 2 */
+
+.navbar2 {
+    transition: background .5s; /* smooth background color change */
+}
+
+.navbar2.scrolled {
+    /* when navbar has the class of scrolled, change background color */
+	/* adding the class is controlled by javascript - see template2.js */
+    background:  rgba(0, 0, 0, 0.9);
+}
+
+.brand2 h1 {
+    font-size: 1.3rem;
+}
+  
+.hero2 {
+    position: relative; /* important for positioning of the hero-container */
+    background-color: black;
+    height: 100vh; /* 100% of the viewport height */
+    min-height: 25rem; /* fallback for vh units - equal to 400px in most browsers (16px x 25) */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero2 .overlay {
+    /* adds a dark scrim over the video */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; /* important for layering the scrim on top of the video */
+}
+
+.hero2 video {
+    /* allow video to adjust to the screen */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0; /* important for layering the video under the scrim and text */
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+.hero2 .container {
+    position: relative;
+    z-index: 2; /* important for layering the text on top of the scrim and video */
+}
+  
+.shop2 {
+    max-width: 992px;
+}
+
+.card-link {
+    color: #212529;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.card-footer2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn.like2 {
+    border: none;
+    font-size: 1.5rem;
+}
+
+.btn.like2:focus {
+    box-shadow: 0 0 0 0.2rem #fff; /* remove Bootstrap's default box-shadow */
+}
+
+.btn.like2-active {
+    color: #e83e8c;
+}
+
+@media only screen and (max-width: 992px) {
+    .shop2 {
+        padding: 0 20px;
+    }
+}
+
+/* Template 3 */
+
+.container3 {
+    border-top: 1px solid #ccc;
+}
+
+.brand3 {
+    color: #212529;
+}
+
+.brand3:hover,
+.brand3:active {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.brand3 h1 {
+    font-size: 1.5rem;  
+}
+
+.nav-scroller {
+    position: relative; /* important for scrollable navbar links */
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden; /* hide default scrollbar */
+}
+
+.nav-scroller .nav {
+    /* scrollable navbar */
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.header3,
+.navigation3,
+.carousel3,
+.gallery3 {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .gallery3 {
+        padding: 0 20px;
+    }
+}
+
+/* North America */
+
+/* Fixed Background Image */
+#fixedna {
+  background-image: url('https://res.cloudinary.com/dvfa68qn3/image/upload/w_1920,c_scale/q_auto,f_auto/fl_lossy/v1590325139/North_America_banner_m3onit.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  
+}
+
+/* Styleguide layout only */
+
+.style-section .color-box {
+    width: 100%;
+    height: 9em;
+}
+

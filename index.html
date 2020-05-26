@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" ">
+    <title>Escape The World</title>   
+                                                                                               
+    																																																																																					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>                
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet "
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css "
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh "
+        crossorigin="anonymous ">
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet "
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css "
+        crossorigin="anonymous ">
+    <!-- Stylesheet -->
+    <link rel="stylesheet " href="./css/main.css ">
+    <!-- Google Fonts -->                                            
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Manrope:wght@400;500;700&display=swap');
+    </style> 
+    <script src="./Scripts/jquery.rwdImageMaps.min.js"></script>                                           
+</head>
+
+<body>
+    <!-- Navigation -->                                               
+    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top navbar-default " role="navigation ">
+    <div class="container-fluid ">
+      <a class="navbar-brand " href="./index.html "><img src="https://res.cloudinary.com/dvfa68qn3/image/upload/c_scale,w_350/v1590325130/Logo_long_olaykj.png "></a>
+      <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarToggleContent" > 
+        <span class="navbar-toggler-icon "></span>  
+      </button>                             
+      <div class="collapse navbar-collapse " id="navbarToggleContent">
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active ">
+            <a class="nav-link " href="./index.html ">Home</a>
+          </li>
+            <li class="nav-item ">
+            <a class="nav-link " href="# ">About</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle " data-toggle="dropdown " href="# " role="button " aria-haspopup="true " aria-expanded="false " >Destinations</a>
+          <div class="dropdown-menu " >
+            <a class="dropdown-item " href="./pages/asia.html ">Asia</a>
+            <a class="dropdown-item " href="./pages/australia.html ">Australia</a>
+            <a class="dropdown-item " href="./pages/europe.html ">Europe</a>
+            <a class="dropdown-item " href="./pages/northamerica.html ">North America</a>
+         </div>
+                                                                     
+         </li>
+         <li class="nav-item ">
+           <a class="nav-link " href="# ">Contact</a>
+         </li>
+                                         
+         </ul>
+                                                                                                          
+      </div>                                                           
+    </div>
+    </nav>
+    <!-- End of Navigation -->
+    <!-- main -->
+    <main> 
+    <!-- Jumbotron -->
+      <section class="jumbotron jumbotron-fluid " id=homejumbotron>
+        <!-- Jumbotron message -->
+        <div class="container text-center px-5" >
+          <h1 class="display-4 pb-3">Hey Adventurers!</h1>
+          <p class="lead">
+            Do you ever wonder about experiencing life outside of your comfort zone and seeing beautiful places in this world with your own eyes? 
+          </p>
+          <p class="lead">                
+            There are so many amazing places in this world to explore and you came exactly to the right place! We are sharing knowledge and experiences about traveling for you to start your own adventure soon! 
+          </p>
+        </div>
+        <!-- endof Jumbotron message -->
+      </section>
+      <!-- end of Jumbotron -->
+                         
+      <!-- Call To Action button -->
+          <div class="container-fluid text-center">               
+          <button onclick="callToAction() " class="btn btn-secondary btn-lg m-3" role="button ">
+                                Let's find the best destination for you!
+          </button>    
+          </div>                                                                                     
+      <!-- Image Map -->    
+      <div class="container-fluid">                                                                                         
+      <img src="https://res.cloudinary.com/dvfa68qn3/image/upload/w_1920,c_scale/q_auto,f_auto/fl_lossy/v1590451808/Map_Escape_the_World_1_-page-001_nqj9hl.jpg" class="img-fluid" alt="world map" usemap="#image-map" > 
+
+<map name="image-map">
+    <area target="_blank" alt="North America" title="North America" href="./pages/northamerica.html" coords="48,1795,918,1011" shape="rect">
+    <area target="_blank" alt="Europe" title="Europe" href="./pages/europe.html" coords="3041,359,2229,1127" shape="rect">
+    <area target="_blank" alt="Asia" title="Asia" href="./pages/asia.html" coords="4900,980,5754,1743" shape="rect">
+    <area target="_blank" alt="Australia" title="Australia" href="./pages/australia.html" coords="4169,2231,5017,2956" shape="rect">
+</map>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-5 text-center ">
+      <a href="./pages/styleguide.html " class="text-white ">Styleguide</a>
+    </footer>
+  </div>
+  <!-- end of Content -->
+  </div>
+  <!-- end of Container -->
+  </div>
+  <!-- end of Wrapper -->
+
+  <!-- Bootstrap JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>$('img[usemap]').rwdImageMaps();</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
+  </script>
+  <script src="./js/main.js "></script>
+  </body>
+
+</html>
